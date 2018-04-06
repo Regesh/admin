@@ -1,12 +1,15 @@
 <mat-sidenav-container class="example-container" fullscreen>
-  <mat-sidenav mode="side" opened>
-    <mat-nav-list>
 
+  <mat-sidenav mode="side" opened>
+
+    <mat-card>Simple card</mat-card>
+
+    <mat-nav-list>
       <!-- menu item -->
       <a mat-list-item>
         <mat-icon mat-list-icon>search</mat-icon>
         <span mat-line>Catalog</span>
-        <span mat-line class="secondary">the main catalog</span>
+        <span mat-line>the main catalog</span>
       </a>
       <!-- /menu item -->
 
@@ -39,7 +42,17 @@
 
     </mat-nav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
-    page content
+
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon">favorite</mat-icon>
+        <mat-icon class="example-icon">delete</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
